@@ -38,6 +38,6 @@ Community sharing is enabled by default, but uploads require individual beta enr
 
 ## Help
 
-[Report a problem](https://github.com/jniedzie/brainshift-feedback/issues). Include the BrainShift version, platform, what you expected and what happened. Reports are public: remove private task text and credentials.
+[Report a problem](https://github.com/jniedzie/brainshift/issues). Include the BrainShift version, platform, what you expected and what happened. Reports are public: remove private task text and credentials.
 
 BrainShift covers supported native Codex tasks, not ordinary ChatGPT web conversations. Native client updates can affect compatibility. Quitting the dashboard does not disable routing; pause it first. In VS Code, run **BrainShift: Disable Native Routing** before removing the extension. The shared engine and history remain installed.
