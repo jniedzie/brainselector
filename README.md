@@ -1,6 +1,6 @@
 # BrainShift
 
-BrainShift chooses a model, reasoning level and speed for each Codex task.
+BrainShift 0.5.6 beta chooses a model, reasoning level and speed for each Codex task.
 
 ## Prerequisites
 
@@ -13,9 +13,11 @@ Adding another interface on the same computer reuses your history and settings.
 
 | Start with | Best for | Beta platform |
 | --- | --- | --- |
-| Mac app | ChatGPT desktop app with a menu-bar dashboard | Apple Silicon, macOS 15 or later |
-| Linux app | A dashboard in your browser, opened from the applications menu | Linux x86_64; AlmaLinux 9 build baseline |
-| VS Code extension | Codex in VS Code, including Remote-SSH | The same Mac and Linux platforms |
+| [Mac app](https://github.com/jniedzie/brainshift/releases/download/v0.5.6/BrainShift-0.5.6-macOS-arm64.zip) | ChatGPT desktop app with a menu-bar dashboard | Apple Silicon, macOS 15 or later |
+| [Linux app](https://github.com/jniedzie/brainshift/releases/download/v0.5.6/BrainShift-0.5.6-Linux-x86_64.tar.gz) | A dashboard in your browser, opened from the applications menu | Linux x86_64; AlmaLinux 9 build baseline |
+| [VS Code extension](https://marketplace.visualstudio.com/items?itemName=jniedzie.brainshift) | Codex in VS Code, including Remote-SSH | The same Mac and Linux platforms |
+
+[See all files and checksums for BrainShift 0.5.6](https://github.com/jniedzie/brainshift/releases/tag/v0.5.6).
 
 The Linux desktop-client routing is very experimental (=untested).
 
