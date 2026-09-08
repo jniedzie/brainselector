@@ -1,40 +1,46 @@
 # BrainShift
 
-BrainShift chooses a model, reasoning level and speed for each Codex task. Keep using your usual composer; review usage and rate the results in one dashboard.
+BrainShift chooses a model, reasoning level and speed for each Codex task.
 
-An independent, experimental app by Jeremi Niedziela. Not affiliated with OpenAI.
+## Prerequisites
+
+A working installation of the ChatGPT app and/or the VS Code Codex extension is needed.
 
 ## Get the beta
 
-**The next beta is being checked. Downloads are not available yet.** This page will be the starting point for every installation. No particular install order is required.
+The app is available for Mac, Linux, and as a VS Code extension. You can install just one of them, then the dashboard will allow you to install the other ones if needed.
+Adding another interface on the same computer reuses your history and settings.
 
 | Start with | Best for | Beta platform |
 | --- | --- | --- |
-| Mac app | Codex desktop and a menu-bar dashboard | Apple Silicon, macOS 15 or later |
+| Mac app | ChatGPT desktop app with a menu-bar dashboard | Apple Silicon, macOS 15 or later |
 | Linux app | A dashboard in your browser, opened from the applications menu | Linux x86_64; AlmaLinux 9 build baseline |
 | VS Code extension | Codex in VS Code, including Remote-SSH | The same Mac and Linux platforms |
 
-Each native package includes the BrainShift engine; Python is not required. An existing signed-in Codex installation is required for routing. Adding another interface on the same computer reuses your history and settings.
-
-The extension is not yet listed in the Visual Studio Marketplace. Windows, Intel Mac, Linux arm64 and Alpine Linux are not supported by this beta. Linux desktop-client routing remains experimental; the Linux dashboard and VS Code integration are separate features.
+The Linux desktop-client routing is very experimental (=untested).
 
 ## Use it
 
-1. Open BrainShift and review the routing choices in **Settings**.
-2. Finish active tasks, then reopen Codex or reload VS Code to connect routing.
-3. Submit a task normally. Open the dashboard to inspect the model choice and usage, then rate the result.
+After the app/extension is installed and running, restart your ChatGPT app and VS Code. 
+Now you can just send your prompts as usual and the magic will happen automatically (even though you may not see the model changing in the UI).
 
-Pause routing in the dashboard to keep your selected model for new tasks. For one task, include `\brainshift_skip`; BrainShift removes the command and preserves your selection without asking its advisor.
+To see more details:
+1. Open BrainShift using the brain icon in the macOS manu-bar or in the VS Code Codex extension window.
+2. Have a look at all the stats in dahsboard.
+3. Check the **Settings** section for more control over BrainShift.
+4. Review recent rerouting decisions - select your rating for each tast, optionally provide a comment, and send.
 
-Use **Install on your devices** to add another interface or a configured SSH host. SSH sign-in must already work; remote extension installation requires an existing VS Code server. Linked devices exchange history and settings when connected. Existing AFS installations need a supervised migration first.
+You can pause routing in the dashboard to keep your selected model for new tasks. For one task, include `\brainshift_skip` - it will be removed from the prompt and preserve your model selection for that prompt.
+
+Use **Install on your devices** to add another interface or install the extension on a configured SSH host. SSH sign-in must already work; remote extension installation requires an existing VS Code server. Linked devices exchange history and settings when connected.
 
 ## Usage and privacy
 
-Savings are estimates using recorded tokens and model rates, not a reduction in your subscription bill. Advisor calls also consume usage and appear separately.
+Savings are estimates using recorded tokens and model rates, but not your actual bill - take it with a large grain of salt. Advisor calls also consume usage and appear separately.
 
-Your local history can contain task text and ratings. Routing sends task text and, when needed, recent context to your OpenAI advisor through your existing Codex sign-in. Linked SSH devices exchange execution metadata, task labels, ratings, notes and routing settings; full prompt previews stay on their original installation.
+Your local history contains task text and ratings. Routing sends task text and, when needed, recent context to your OpenAI advisor through your existing Codex sign-in. Linked SSH devices exchange execution metadata, task labels, ratings, notes and routing settings; full prompts stay on their original installation.
 
-Community sharing is enabled by default, but uploads require individual beta enrolment and access to the collector. Enrolled clients send category, model, rating and usage statistics automatically. They do not upload prompts, titles, notes, task IDs, host names or OpenAI credentials. Turn sharing off in Settings to stop future uploads. Community learning falls back to personal learning when evidence is insufficient.
+Community sharing is enabled by default. Clients send category, model, rating and usage statistics automatically. They do not upload prompts, titles, notes, task IDs, host names or OpenAI credentials. Turn sharing off in Settings to stop future uploads.
 
 ## Help
 
