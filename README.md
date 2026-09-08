@@ -28,7 +28,7 @@ To see more details:
 1. Open BrainShift using the brain icon in the macOS manu-bar or in the VS Code Codex extension window.
 2. Have a look at all the stats in the dashboard.
 3. Check the **Settings** section for more control over BrainShift.
-4. Review recent rerouting decisions - select your rating for each tast, optionally provide a comment, and send.
+4. Review recent rerouting decisions - select your rating for each tast, optionally provide a comment, then save it.
 
 You can pause routing in the dashboard to keep your selected model for new tasks. For one task, include `\brainshift_skip` - it will be removed from the prompt and preserve your model selection for that prompt.
 
