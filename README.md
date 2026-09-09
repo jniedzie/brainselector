@@ -1,6 +1,6 @@
 # BrainSelector
 
-BrainSelector 0.6.1 beta chooses a model, reasoning level and speed for each Codex task.
+BrainSelector chooses a model, reasoning level and speed for each Codex task.
 
 ## Prerequisites
 
@@ -13,11 +13,11 @@ Adding another interface on the same computer reuses your history and settings.
 
 | Start with | Best for | Beta platform |
 | --- | --- | --- |
-| [Mac app](https://github.com/jniedzie/brainselector/releases/download/v0.6.1/BrainSelector-0.6.1-macOS-arm64.zip) | ChatGPT desktop app with a menu-bar dashboard | Apple Silicon, macOS 15 or later |
-| [Linux app](https://github.com/jniedzie/brainselector/releases/download/v0.6.1/BrainSelector-0.6.1-Linux-x86_64.tar.gz) | A dashboard in your browser, opened from the applications menu | Linux x86_64; AlmaLinux 9 build baseline |
+| [Mac app](https://github.com/jniedzie/brainselector/releases) | ChatGPT desktop app with a menu-bar dashboard | Apple Silicon, macOS 15 or later |
+| [Linux app](https://github.com/jniedzie/brainselector/releases) | A dashboard in your browser, opened from the applications menu | Linux x86_64; AlmaLinux 9 build baseline |
 | [VS Code extension](https://marketplace.visualstudio.com/items?itemName=jniedzie.brainselector) | Codex in VS Code, including Remote-SSH | The same Mac and Linux platforms |
 
-[See all files and checksums for BrainSelector 0.6.1](https://github.com/jniedzie/brainselector/releases/tag/v0.6.1).
+[Download the latest beta and view checksums](https://github.com/jniedzie/brainselector/releases).
 
 The Linux desktop-client routing is very experimental (=untested).
 
