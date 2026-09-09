@@ -1,6 +1,6 @@
-# BrainShift
+# BrainSelector
 
-BrainShift 0.5.6 beta chooses a model, reasoning level and speed for each Codex task.
+BrainSelector 0.6.1 beta chooses a model, reasoning level and speed for each Codex task.
 
 ## Prerequisites
 
@@ -13,11 +13,11 @@ Adding another interface on the same computer reuses your history and settings.
 
 | Start with | Best for | Beta platform |
 | --- | --- | --- |
-| [Mac app](https://github.com/jniedzie/brainshift/releases/download/v0.5.6/BrainShift-0.5.6-macOS-arm64.zip) | ChatGPT desktop app with a menu-bar dashboard | Apple Silicon, macOS 15 or later |
-| [Linux app](https://github.com/jniedzie/brainshift/releases/download/v0.5.6/BrainShift-0.5.6-Linux-x86_64.tar.gz) | A dashboard in your browser, opened from the applications menu | Linux x86_64; AlmaLinux 9 build baseline |
-| [VS Code extension](https://marketplace.visualstudio.com/items?itemName=jniedzie.brainshift) | Codex in VS Code, including Remote-SSH | The same Mac and Linux platforms |
+| [Mac app](https://github.com/jniedzie/brainselector/releases/download/v0.6.1/BrainSelector-0.6.1-macOS-arm64.zip) | ChatGPT desktop app with a menu-bar dashboard | Apple Silicon, macOS 15 or later |
+| [Linux app](https://github.com/jniedzie/brainselector/releases/download/v0.6.1/BrainSelector-0.6.1-Linux-x86_64.tar.gz) | A dashboard in your browser, opened from the applications menu | Linux x86_64; AlmaLinux 9 build baseline |
+| [VS Code extension](https://marketplace.visualstudio.com/items?itemName=jniedzie.brainselector) | Codex in VS Code, including Remote-SSH | The same Mac and Linux platforms |
 
-[See all files and checksums for BrainShift 0.5.6](https://github.com/jniedzie/brainshift/releases/tag/v0.5.6).
+[See all files and checksums for BrainSelector 0.6.1](https://github.com/jniedzie/brainselector/releases/tag/v0.6.1).
 
 The Linux desktop-client routing is very experimental (=untested).
 
@@ -27,12 +27,12 @@ After the app/extension is installed and running, restart your ChatGPT app and V
 Now you can just send your prompts as usual and the magic will happen automatically (even though you may not see the model changing in the UI).
 
 To see more details:
-1. Open BrainShift using the brain icon in the macOS manu-bar or in the VS Code Codex extension window.
+1. Open BrainSelector using the brain icon in the macOS manu-bar or in the VS Code Codex extension window.
 2. Have a look at all the stats in the dashboard.
-3. Check the **Settings** section for more control over BrainShift.
+3. Check the **Settings** section for more control over BrainSelector.
 4. Review recent rerouting decisions - select your rating for each tast, optionally provide a comment, then save it.
 
-You can pause routing in the dashboard to keep your selected model for new tasks. For one task, include `\brainshift_skip` - it will be removed from the prompt and preserve your model selection for that prompt.
+You can pause routing in the dashboard to keep your selected model for new tasks. For one task, include `\brainselector_skip` - it will be removed from the prompt and preserve your model selection for that prompt.
 
 Use **Install on your devices** to add another interface or install the extension on a configured SSH host. SSH sign-in must already work; remote extension installation requires an existing VS Code server. Linked devices exchange history and settings when connected.
 
@@ -46,6 +46,6 @@ Community sharing is enabled by default. Clients send category, model, rating an
 
 ## Help
 
-[Report a problem](https://github.com/jniedzie/brainshift/issues). Include the BrainShift version, platform, what you expected and what happened. Reports are public: remove private task text and credentials.
+[Report a problem](https://github.com/jniedzie/brainselector/issues). Include the BrainSelector version, platform, what you expected and what happened. Reports are public: remove private task text and credentials.
 
-BrainShift covers supported native Codex tasks, not ordinary ChatGPT web conversations. Native client updates can affect compatibility. Quitting the dashboard does not disable routing; pause it first. In VS Code, run **BrainShift: Disable Native Routing** before removing the extension. The shared engine and history remain installed.
+BrainSelector covers supported native Codex tasks, not ordinary ChatGPT web conversations. Native client updates can affect compatibility. Quitting the dashboard does not disable routing; pause it first. In VS Code, run **BrainSelector: Disable Native Routing** before removing the extension. The shared engine and history remain installed.
