@@ -13,8 +13,8 @@ Adding another interface on the same computer reuses your history and settings.
 
 | Start with | Best for | Beta platform |
 | --- | --- | --- |
-| [Mac app](https://github.com/jniedzie/brainselector/releases/download/v0.6.4/BrainSelector-0.6.4-macOS-arm64.dmg) | ChatGPT desktop app with a menu-bar dashboard | Apple Silicon, macOS 15 or later |
-| [Linux app](https://github.com/jniedzie/brainselector/releases/download/v0.6.4/BrainSelector-0.6.4-Linux-x86_64.tar.gz) | A dashboard in your browser, opened from the applications menu | Linux x86_64; AlmaLinux 9 build baseline |
+| [Mac app](https://github.com/jniedzie/brainselector/releases/download/v0.6.6/BrainSelector-0.6.6-macOS-arm64.dmg) | ChatGPT desktop app with a menu-bar dashboard | Apple Silicon, macOS 15 or later |
+| [Linux app](https://github.com/jniedzie/brainselector/releases/download/v0.6.6/BrainSelector-0.6.6-Linux-x86_64.tar.gz) | A dashboard in your browser, opened from the applications menu | Linux x86_64; AlmaLinux 9 build baseline |
 | [VS Code extension](https://marketplace.visualstudio.com/items?itemName=jniedzie.brainselector) | Codex in VS Code, including Remote-SSH | The same Mac and Linux platforms |
 
 [Download the latest beta and view checksums](https://github.com/jniedzie/brainselector/releases).
@@ -50,4 +50,4 @@ Community sharing is enabled by default. Clients send category, model, rating an
 
 [Report a problem](https://github.com/jniedzie/brainselector/issues). Include the BrainSelector version, platform, what you expected and what happened. Reports are public: remove private task text and credentials.
 
-BrainSelector covers supported native Codex tasks, not ordinary ChatGPT web conversations. Native client updates can affect compatibility. Quitting the dashboard does not disable routing; pause it first. In VS Code, run **BrainSelector: Disable Native Routing** before removing the extension. The shared engine and history remain installed.
+BrainSelector covers supported native Codex tasks, not ordinary ChatGPT web conversations. Native client updates can affect compatibility. Quitting the dashboard does not disable routing; pause it first. Uninstall BrainSelector through VS Code’s Extensions view. Its interface and executable binding are cleaned up automatically; finish active Codex tasks before accepting a reload. Feedback, usage history, shared settings, and the shared engine are retained for other interfaces and later reinstalls. A small compatibility launcher on remote hosts lets Codex start normally when your laptop still uses BrainSelector.
