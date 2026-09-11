@@ -13,9 +13,9 @@ Adding another interface on the same computer reuses your history and settings.
 
 | Start with | Best for | Beta platform |
 | --- | --- | --- |
-| [Mac app](https://github.com/jniedzie/brainselector/releases/download/v0.6.10/BrainSelector-0.6.10-macOS-arm64.dmg) | ChatGPT desktop app with a menu-bar dashboard | Apple Silicon, macOS 15 or later |
-| [Linux app](https://github.com/jniedzie/brainselector/releases/download/v0.6.10/BrainSelector-0.6.10-Linux-x86_64.tar.gz) | A dashboard in your browser, opened from the applications menu | Linux x86_64; AlmaLinux 9 build baseline |
-| [VS Code extension](https://marketplace.visualstudio.com/items?itemName=jniedzie.brainselector) | Codex in VS Code, including Remote-SSH | The same Mac and Linux platforms |
+| [Mac app](https://github.com/jniedzie/brainselector/releases/download/v0.6.19/BrainSelector-0.6.19-macOS-arm64.dmg) | ChatGPT desktop app with a menu-bar dashboard | Apple Silicon, macOS 15 or later |
+| [Linux app](https://github.com/jniedzie/brainselector/releases/download/v0.6.19/BrainSelector-0.6.19-Linux-x86_64.tar.gz) | A dashboard in your browser, opened from the applications menu | Linux x86_64; AlmaLinux 9 build baseline |
+| [VS Code extension](https://github.com/jniedzie/brainselector/releases/download/v0.6.19/brainselector-0.6.19-native.vsix) | Codex in VS Code, including Remote-SSH | The same Mac and Linux platforms |
 
 [Download the latest beta and view checksums](https://github.com/jniedzie/brainselector/releases).
 
