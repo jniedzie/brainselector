@@ -13,13 +13,17 @@ Adding another interface on the same computer reuses your history and settings.
 
 | Start with | Best for | Beta platform |
 | --- | --- | --- |
-| [Mac app](https://github.com/jniedzie/brainselector/releases/download/v0.6.19/BrainSelector-0.6.19-macOS-arm64.dmg) | ChatGPT desktop app with a menu-bar dashboard | Apple Silicon, macOS 15 or later |
-| [Linux app](https://github.com/jniedzie/brainselector/releases/download/v0.6.19/BrainSelector-0.6.19-Linux-x86_64.tar.gz) | A dashboard in your browser, opened from the applications menu | Linux x86_64; AlmaLinux 9 build baseline |
-| [VS Code extension](https://github.com/jniedzie/brainselector/releases/download/v0.6.19/brainselector-0.6.19-native.vsix) | Codex in VS Code, including Remote-SSH | The same Mac and Linux platforms |
+| [Mac app](https://github.com/jniedzie/brainselector/releases/download/v0.6.22/BrainSelector-0.6.22-macOS-arm64.dmg) | ChatGPT desktop app with a menu-bar dashboard | Apple Silicon, macOS 15 or later |
+| [Linux app](https://github.com/jniedzie/brainselector/releases/download/v0.6.22/BrainSelector-0.6.22-Linux-x86_64.tar.gz) | A dashboard in your browser, opened from the applications menu | Linux x86_64; RHEL 9.8 build baseline |
+| [VS Code extension](https://github.com/jniedzie/brainselector/releases/download/v0.6.22/brainselector-0.6.22-native.vsix) | Codex in VS Code, including Remote-SSH | The same Mac and Linux platforms |
 
 [Download the latest beta and view checksums](https://github.com/jniedzie/brainselector/releases).
 
 On Mac, open the downloaded disk image and drag BrainSelector to Applications.
+
+Version 0.6.22 is a beta awaiting Apple Developer ID signing and notarization. macOS may block or warn about BrainSelector or its bundled Python runtime. Python is included; installing another Python will not resolve that warning. If blocked, wait for the notarized release. [Release status and checksums](https://github.com/jniedzie/brainselector/releases/tag/v0.6.22).
+
+Homebrew distribution is being prepared and will use the notarized Mac installer. The Mac App Store edition requires further sandbox and integration work and is not yet available.
 
 The Linux desktop-client routing is very experimental (=untested).
 
