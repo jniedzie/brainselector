@@ -6,24 +6,29 @@ BrainSelector chooses a model, reasoning level and speed for each Codex task.
 
 A working installation of the ChatGPT app and/or the VS Code Codex extension is needed.
 
-## Get the beta
+## Install
 
 The app is available for Mac, Linux, and as a VS Code extension. You can install just one of them, then the dashboard will allow you to install the other ones if needed.
 Adding another interface on the same computer reuses your history and settings.
 
-| Start with | Best for | Beta platform |
+| Start with | Best for | Platform |
 | --- | --- | --- |
-| [Mac app](https://github.com/jniedzie/brainselector/releases/download/v0.6.22/BrainSelector-0.6.22-macOS-arm64.dmg) | ChatGPT desktop app with a menu-bar dashboard | Apple Silicon, macOS 15 or later |
-| [Linux app](https://github.com/jniedzie/brainselector/releases/download/v0.6.22/BrainSelector-0.6.22-Linux-x86_64.tar.gz) | A dashboard in your browser, opened from the applications menu | Linux x86_64; RHEL 9.8 build baseline |
-| [VS Code extension](https://github.com/jniedzie/brainselector/releases/download/v0.6.22/brainselector-0.6.22-native.vsix) | Codex in VS Code, including Remote-SSH | The same Mac and Linux platforms |
+| [Mac app](https://github.com/jniedzie/brainselector/releases/download/v0.6.34/BrainSelector-0.6.34-macOS-arm64.zip) | ChatGPT desktop app with a menu-bar dashboard | Apple Silicon, macOS 15 or later |
+| [Linux app](https://github.com/jniedzie/brainselector/releases/download/v0.6.34/BrainSelector-0.6.34-Linux-x86_64.tar.gz) | A dashboard in your browser, opened from the applications menu | Linux x86_64; RHEL 9.8 build baseline |
+| [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=jniedzie.brainselector) | Codex or Claude in VS Code, including Remote-SSH | The same Mac and Linux platforms |
+| [VSIX download](https://github.com/jniedzie/brainselector/releases/download/v0.6.34/brainselector-0.6.34-native.vsix) | Offline/manual VS Code installation | The same Mac and Linux platforms |
 
-[Download the latest beta and view checksums](https://github.com/jniedzie/brainselector/releases).
+[Download the latest release and view checksums](https://github.com/jniedzie/brainselector/releases).
 
-On Mac, open the downloaded disk image and drag BrainSelector to Applications.
+On Mac, unpack the signed download and move BrainSelector to Applications, or use Homebrew:
 
-Version 0.6.22 is a beta awaiting Apple Developer ID signing and notarization. macOS may block or warn about BrainSelector or its bundled Python runtime. Python is included; installing another Python will not resolve that warning. If blocked, wait for the notarized release. [Release status and checksums](https://github.com/jniedzie/brainselector/releases/tag/v0.6.22).
+```sh
+brew install --cask jniedzie/brainselector/brainselector
+```
 
-Homebrew distribution is being prepared and will use the notarized Mac installer. The Mac App Store edition requires further sandbox and integration work and is not yet available.
+The Mac app is Developer ID signed and notarized. Python and the provider helper are included; no separate runtime installation is needed. [Release status and checksums](https://github.com/jniedzie/brainselector/releases/tag/v0.6.34).
+
+The full app is not available in the Mac App Store because its desktop routing, shared backend and device installer are incompatible with App Sandbox requirements. A separate companion edition is planned.
 
 The Linux desktop-client routing is very experimental (=untested).
 
@@ -33,10 +38,10 @@ After the app/extension is installed and running, restart your ChatGPT app and V
 Now you can just send your prompts as usual and the magic will happen automatically (even though you may not see the model changing in the UI).
 
 To see more details:
-1. Open BrainSelector using the brain icon in the macOS manu-bar or in the VS Code Codex extension window.
+1. Open BrainSelector using the brain icon in the macOS menu bar, the VS Code extension view, or `brainselector tui`.
 2. Have a look at all the stats in the dashboard.
 3. Check the **Settings** section for more control over BrainSelector.
-4. Review recent rerouting decisions - select your rating for each tast, optionally provide a comment, then save it.
+4. Review task history, rate advisor decisions, optionally provide a comment, then save it.
 
 You can pause routing in the dashboard to keep your selected model for new tasks. For one task, include `\skip` - it will be removed from the prompt and preserve your model selection for that prompt. Code examples and longer names are left unchanged. The previous commands still work.
 
@@ -54,4 +59,4 @@ Community sharing is enabled by default. Clients send category, model, rating an
 
 [Report a problem](https://github.com/jniedzie/brainselector/issues). Include the BrainSelector version, platform, what you expected and what happened. Reports are public: remove private task text and credentials.
 
-BrainSelector covers supported native Codex tasks, not ordinary ChatGPT web conversations. Native client updates can affect compatibility. Quitting the dashboard does not disable routing; pause it first. Uninstall BrainSelector through VS Code’s Extensions view. Its interface and executable binding are cleaned up automatically; finish active Codex tasks before accepting a reload. Feedback, usage history, shared settings, and the shared engine are retained for other interfaces and later reinstalls. A small compatibility launcher on remote hosts lets Codex start normally when your laptop still uses BrainSelector.
+BrainSelector covers supported native Codex and Claude Code tasks, not ordinary ChatGPT web conversations. Native client updates can affect compatibility. Quitting the dashboard does not disable routing; pause it first. Uninstall BrainSelector through VS Code’s Extensions view. Its interface and executable binding are cleaned up automatically; finish active tasks before accepting a reload. Feedback, usage history, shared settings, and the shared engine are retained for other interfaces and later reinstalls. A small compatibility launcher on remote hosts lets Codex start normally when your laptop still uses BrainSelector.
