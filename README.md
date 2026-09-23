@@ -4,7 +4,8 @@ BrainSelector chooses a model, reasoning level and speed for each Codex task.
 
 ## Prerequisites
 
-A working installation of the ChatGPT app and/or the VS Code Codex extension is needed.
+Install at least one Codex client: the ChatGPT app, the VS Code Codex extension, or the standalone Codex CLI.
+Open BrainSelector once to connect the standalone Codex CLI automatically. Start a new terminal and run `codex` to use BrainSelector; existing sessions can stay open and finish their work. `brainselector tui` opens the BrainSelector dashboard.
 
 ## Install
 
@@ -13,12 +14,10 @@ Adding another interface on the same computer reuses your history and settings.
 
 | Start with | Best for | Platform |
 | --- | --- | --- |
-| [Mac app](https://github.com/jniedzie/brainselector/releases/download/v0.6.39/BrainSelector-0.6.39-macOS-arm64.zip) | ChatGPT desktop app with a menu-bar dashboard | Apple Silicon, macOS 15 or later |
-| [Linux app](https://github.com/jniedzie/brainselector/releases/download/v0.6.39/BrainSelector-0.6.39-Linux-x86_64.tar.gz) | A dashboard in your browser, opened from the applications menu | Linux x86_64; RHEL 9.8 build baseline |
+| [Mac app](https://github.com/jniedzie/brainselector/releases/download/v0.6.60/BrainSelector-0.6.60-macOS-arm64.zip) | ChatGPT desktop app with a menu-bar dashboard | Apple Silicon, macOS 15 or later |
+| [Linux app](https://github.com/jniedzie/brainselector/releases/download/v0.6.60/BrainSelector-0.6.60-Linux-x86_64.tar.gz) | A dashboard in your browser, opened from the applications menu | Linux x86_64; RHEL 9.8 build baseline |
 | [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=jniedzie.brainselector) | Codex or Claude in VS Code, including Remote-SSH | The same Mac and Linux platforms |
-| [VSIX download](https://github.com/jniedzie/brainselector/releases/download/v0.6.39/brainselector-0.6.39-native.vsix) | Offline/manual VS Code installation | The same Mac and Linux platforms |
-
-Version 0.6.39 includes the macOS app, Linux app, and VS Code extension packages.
+| [VSIX download](https://github.com/jniedzie/brainselector/releases/download/v0.6.60/brainselector-0.6.60-native.vsix) | Offline/manual VS Code installation | The same Mac and Linux platforms |
 
 [Download the latest release and view checksums](https://github.com/jniedzie/brainselector/releases).
 
@@ -28,7 +27,7 @@ On Mac, unpack the signed download and move BrainSelector to Applications, or us
 brew install --cask jniedzie/brainselector/brainselector
 ```
 
-The Mac app is Developer ID signed and notarized. Python and the provider helper are included; no separate runtime installation is needed. [Release status and checksums](https://github.com/jniedzie/brainselector/releases/tag/v0.6.39).
+The Mac app is Developer ID signed and notarized. Python and the provider helper are included; no separate runtime installation is needed. [Release status and checksums](https://github.com/jniedzie/brainselector/releases/tag/v0.6.60).
 
 The full app is not available in the Mac App Store because its desktop routing, shared backend and device installer are incompatible with App Sandbox requirements. A separate companion edition is planned.
 
@@ -36,9 +35,7 @@ The Linux desktop-client routing is very experimental (=untested).
 
 ## Use it
 
-On Mac, run `brainselector tui` after installation. It prepares the backend automatically; opening the menu-bar app first is unnecessary. Open BrainSelector from Applications when you want the graphical dashboard.
-
-If ChatGPT was already running during setup, finish active tasks and reopen it to connect routing. The dashboard also offers a normal restart action. For the VS Code extension, reload the editor when prompted. You can then send prompts as usual; routing may not change the conversation's model indicator.
+Open BrainSelector once after installation. If ChatGPT or VS Code was already running, use the restart or reload action shown by BrainSelector. Existing terminal sessions can finish normally; start a new `codex` session to use routing.
 
 To see more details:
 1. Open BrainSelector using the brain icon in the macOS menu bar, the VS Code extension view, or `brainselector tui`.
@@ -56,9 +53,7 @@ Savings are estimates using recorded tokens and model rates, but not your actual
 
 Your local history contains task text and ratings. Routing sends task text and, when needed, recent context to your OpenAI advisor through your existing Codex sign-in. Linked SSH devices exchange execution metadata, task labels, ratings, notes and routing settings; full prompts stay on their original installation.
 
-On Mac 0.6.35, Community and Community + personal learning work immediately from a reviewed snapshot of 433 numeric ratings, including offline. Live evidence replaces that snapshot when a collector connection is available. No collector credentials are bundled.
-
-Sharing is separate from using community evidence. Its preference is enabled by default, but uploads require a configured collector connection. Connected clients send category, model, rating and usage statistics; they do not upload prompts, titles, notes, task IDs, host names or OpenAI credentials. Turn sharing off in Settings to stop future uploads.
+Community sharing is enabled by default. Clients send category, model, rating and usage statistics automatically. They do not upload prompts, titles, notes, task IDs, host names or OpenAI credentials. Turn sharing off in Settings to stop future uploads.
 
 ## Help
 
