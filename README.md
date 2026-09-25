@@ -14,10 +14,10 @@ Adding another interface on the same computer reuses your history and settings.
 
 | Start with | Best for | Platform |
 | --- | --- | --- |
-| [Mac app](https://github.com/jniedzie/brainselector/releases/download/v0.6.60/BrainSelector-0.6.60-macOS-arm64.zip) | ChatGPT desktop app with a menu-bar dashboard | Apple Silicon, macOS 15 or later |
-| [Linux app](https://github.com/jniedzie/brainselector/releases/download/v0.6.60/BrainSelector-0.6.60-Linux-x86_64.tar.gz) | A dashboard in your browser, opened from the applications menu | Linux x86_64; RHEL 9.8 build baseline |
+| [Mac app](https://github.com/jniedzie/brainselector/releases/download/v0.6.64/BrainSelector-0.6.64-macOS-arm64.zip) | ChatGPT desktop app with a menu-bar dashboard | Apple Silicon, macOS 15 or later |
+| [Linux app](https://github.com/jniedzie/brainselector/releases/download/v0.6.64/BrainSelector-0.6.64-Linux-x86_64.tar.gz) | A dashboard in your browser, opened from the applications menu | Linux x86_64; RHEL 9.8 build baseline |
 | [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=jniedzie.brainselector) | Codex or Claude in VS Code, including Remote-SSH | The same Mac and Linux platforms |
-| [VSIX download](https://github.com/jniedzie/brainselector/releases/download/v0.6.60/brainselector-0.6.60-native.vsix) | Offline/manual VS Code installation | The same Mac and Linux platforms |
+| [VSIX download](https://github.com/jniedzie/brainselector/releases/download/v0.6.64/brainselector-0.6.64-native.vsix) | Offline/manual VS Code installation | The same Mac and Linux platforms |
 
 [Download the latest release and view checksums](https://github.com/jniedzie/brainselector/releases).
 
@@ -27,7 +27,7 @@ On Mac, unpack the signed download and move BrainSelector to Applications, or us
 brew install --cask jniedzie/brainselector/brainselector
 ```
 
-The Mac app is Developer ID signed and notarized. Python and the provider helper are included; no separate runtime installation is needed. [Release status and checksums](https://github.com/jniedzie/brainselector/releases/tag/v0.6.60).
+The Mac app is Developer ID signed and notarized. Python and the provider helper are included; no separate runtime installation is needed. [Release status and checksums](https://github.com/jniedzie/brainselector/releases/tag/v0.6.64).
 
 The full app is not available in the Mac App Store because its desktop routing, shared backend and device installer are incompatible with App Sandbox requirements. A separate companion edition is planned.
 
